@@ -14,8 +14,8 @@ for(i=0;i<10;i++)
 		inp.oninput=function(e)
 		{
 			var v=document.getElementById("inp"+r+"r"+c).value.replace("\r\n","\n").replace("\r","\n")              
-			for(q=0;q<v.split("\n").length;q++)  
-				for(w=0;w<v.split("\n")[q].split("\t").length;w++)
+			for(q=0;q<0+v.split("\n").length;q++)  
+				for(w=0;w<0+v.split("\n")[q].split("\t").length;w++)
 					document.getElementById("inp"+(r+q)+"r"+(c+w)).value=v.split("\n")[q].split("\t")[w]
 		}
 		
